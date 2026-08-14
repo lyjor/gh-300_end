@@ -1,0 +1,16 @@
+{
+  "name": "escola-monorepo",
+  "private": true,
+  "workspaces": [
+    "back",
+    "front"
+  ],
+  "scripts": {
+    "dev:back": "npm --workspace back run dev",
+    "build:back": "npm --workspace back run build",
+    "dev:front": "npm --workspace front run start",
+    "build:front": "npm --workspace front run build",
+    "db:up": "docker compose up -d mysql",
+    "db:down": "docker compose down"
+  }
+}

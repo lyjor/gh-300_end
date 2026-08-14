@@ -205,3 +205,21 @@ CREATE TABLE alunos (
     Criptografia de senhas com bcrypt.
 
     Validação de dados no backend e frontend.
+
+📁 Estrutura física criada
+
+    front/ → Aplicação Angular com rotas, guardas, interceptor HTTP e páginas por domínio.
+
+    back/ → API Node.js com Express, Prisma, segurança de headers, rate limit e módulos CRUD.
+
+    banco/ → Scripts SQL de schema e seed para MySQL, com chaves, índices e integridade relacional.
+
+🚀 Inicialização do ambiente
+
+    1. Copiar .env.example para .env e revisar segredos e credenciais locais.
+
+    2. Subir o MySQL com docker compose.
+
+    3. Instalar dependências nos diretórios front/ e back/ antes de executar os comandos de desenvolvimento.
+
+    4. Rodar o backend em seguida o frontend para consumir a API protegida.
